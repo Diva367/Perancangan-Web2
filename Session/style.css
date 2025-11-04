@@ -1,0 +1,128 @@
+/* ====== Global ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d4ecff, #e8f4ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h3 {
+    color: #0077cc;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ====== Container ====== */
+form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+label {
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0077cc;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* ====== Radio Buttons ====== */
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+/* ====== Messages ====== */
+p.success {
+    color: green;
+    text-align: center;
+    font-weight: 600;
+}
+
+p.error {
+    color: red;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ====== Links ====== */
+a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Counter Section ====== */
+.counter {
+    margin-top: 20px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
